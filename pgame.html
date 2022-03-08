@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="js" href="js/common.js">
+    <title>Penguin game</title>
+    <script src="js/common.js"></script>
+    <script src="js/pgame.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+    canvas {
+        border:1px solid silver;
+        background-color: skyblue;
+        margin: 0 auto;
+        display:block;
+        width: 50%;
+      }
+    </style>
+</head>
+<body onload="startgame()">
+  <div class="aban">
+    <h1 style="text-align: center;padding-left: 160px;">
+        Penguin game
+        <span id="clock">
+            00:00:00
+        </span>
+    </h1>
+</div>
+<div class="Message" style="top:50px;position: relative;text-align: center;">
+    <div  class="navbar">
+        <ul>
+            <a href="home.html"><li>Home</li></a>
+            <a href="aboutme.html"><li>About Me</li></a>
+            <a href="https://trendyclothin.co.uk" target="_blank"><li>Trendy Clothin</li></a>
+            <a href="dyp.html"><li>Design your Penguin</li></a>
+            <a href="pgame.html"><li>Penguin Game</li></a>
+        </ul>
+    </div>
+  </div>
+  <br>
+<p style="text-align: center;color: black;background-color: red;" id="gameover"><strong>GAME OVER</strong></p>
+  <div style="text-align:center;width:480px;">
+    <button onmousedown="clear()" onmouseup="startgame()" ontouchstart="clear()" style="color: seagreen;">RESTART</button>
+  </div>
+  
+  <!--<canvas id="canvas" width="5" height="260"
+  style="border:1px solid #d3d3d3;align-self: center;">unable to display game</canvas>-->
+</body>
+</html>

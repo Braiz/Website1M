@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <!-- <link rel="js" href="js/common.js"> -->
+    <title>Jack's website</title>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div class="aban">
+        <h1 style="text-align: center;padding-left: 160px;">
+            Home page
+            <span id="clock">
+                00:00:00
+            </span>
+        </h1>
+    </div>
+    <div class="Message" style="top:50px;position: relative;text-align: center;">
+        <div  class="navbar">
+            <ul>
+                <a href="home.html"><li>Home</li></a>
+                <a href="aboutme.html"><li>About Me</li></a>
+                <a href="https://trendyclothin.co.uk" target="_blank"><li>Trendy Clothin</li></a>
+                <a href="dyp.html"><li>Design your Penguin</li></a>
+                <a href="pgame.html"><li>Penguin Game</li></a>
+            </ul>
+        </div>
+        <br>
+        <div class="welcomemover">
+            <div id="boxone"></div>
+            <span id="welcomemoveW">W</span><span id="welcomemoveEa">E</span><span id="welcomemoveL">L</span><span id="welcomemoveC">C</span><span id="welcomemoveO">O</span><span id="welcomemoveM">M</span><span id="welcomemoveEb">E</span>
+        </div>
+        <br>
+        <div>
+            <img src="./images/browntrendy.jpg" alt="sam" class="imageone">
+        </div>
+        <br>
+        <div style="position:relative;width: 500px;">
+            <p id="myid">A Paragraph.</p>
+            <button type="button" onclick="myFunction()">Try it</button>
+        </div>
+        <br>
+        <a href="#media">Media</a>
+        <br>
+        <a href="./aboutme.html">
+            <img src="./images/itsme.JPG" alt="Jack Brazier" Style="width:30%;border:pink 5px solid;box-shadow: slategray ;">
+        </a>
+        <br>
+        <p class="Title">My first paragraph.</p>
+        <p>
+            And now here is a list of things I like:
+            <ul>
+                <li>Tea</li>
+                <li>My friends and family</li>
+                <li>Sausage and mash</li>
+            </ul>
+        </p>
+        <p>
+            Another list now, of things i dont like (numbered)
+            <ol>
+                <li>Coffee</li>
+                <li>My friend's music</li>
+                <li>Listing things</li>
+            </ol>
+        </p>
+    </div>
+    <br>
+    <div class="Message" id="media">
+        <p class="Details">Media</p>
+        <button type="button" onclick="goback()"><</button>
+        <canvas id="slider" width="250" height="300" style="border:1px solid #d3d3d3;">not supported</canvas>
+        <button type="button" onclick="goforward()">></button>
+        <img src="./images/TrendyCollective.JPG" alt="TrendyCollective" style="width:100%">
+        <figcaption>
+            Trendy models at the Collective Canary Wharf
+        </figcaption>
+    </div>
+</body>
+</html>

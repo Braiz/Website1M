@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Design A Penguin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <script type="text/javascript"  src="./js/common.js">
+        alert("This alert box was called with the onload event");
+    </script>
+</head>
+<body>
+    <div class="aban">
+        <h1 style="text-align: center;padding-left: 160px;">
+            Design your penguin
+            <span id="clock">
+                00:00:00
+            </span>
+        </h1>
+    </div>
+    <div class="Message" style="top:50px;position: relative;text-align: center;">
+        <div  class="navbar">
+            <ul>
+                <a href="home.html"><li>Home</li></a>
+                <a href="aboutme.html"><li>About Me</li></a>
+                <a href="https://trendyclothin.co.uk" target="_blank"><li>Trendy Clothin</li></a>
+                <a href="dyp.html"><li>Design your Penguin</li></a>
+                <a href="pgame.html"><li>Penguin Game</li></a>
+            </ul>
+        </div>
+    
+    <form action="submission.html" method="POST">
+        <p>Welcome to design your penguin! First, we need a name...</p>
+        <section class="name">
+            <label for="pname">What should we call your penguin?</label>
+            
+            <input type="text" name="pname" id="pname">
+        </section>
+        <hr>
+        <section class="age">
+            <label for="page">How many years old is your penguin?</label>
+            <br>
+            <input type="number" name="page" id="page" step="1" min="1">
+        </section>
+        <hr>
+        <section class="height">
+            <label for="pheight">How tall in meters is this penguin of yours?</label>
+            <br>
+            <span>0.5 meters</span>
+            <input type="range" name="pheight" id="pheight" value="0.8" min="0.5" max="1" step="0.1">
+            <span>2 meters</span>
+        </section>
+        <hr>
+        <section class="features">
+            <span>What features does your penguin have?</span>
+            <br>
+            <input type="checkbox" name="pfeat" id="eyebrows" value="eyebrows">
+            <label for="eyebrows">Large eyebrows</label>
+            <input type="checkbox" name="pfeat" id="orange" value="orange">
+            <label for="orange">Orange beak</label>
+            <input type="checkbox" name="pfeat" id="fluffy" value="fluffy">
+            <label for="fluffy">Fluffy coat</label>
+        </section>
+        <hr>
+        <section class="trendy">
+            <span>Is your penguin Trendy?</span>
+            <br>
+            <input type="radio" name="trendyp" id="yes" value="yes">
+            <label for="yes">Yes of course!</label>
+            <input type="radio" name="trendyp" id="no" value="no">
+            <label for="no">Nah not mine.</label>
+        </section>
+        <hr>
+        <section class="sport">
+            <label for="psport">What is your penguins favourite sport?</label>
+            <br>
+            <select name="psport" id="psport">
+                <option value="swimming">Swimming</option>
+                <option value="skating">Ice skating</option>
+                <option value="polo">Water polo</option>
+                <option value="diving">Diving</option>
+            </select>
+        </section>
+        <hr>
+        <section class="favesong">
+            <label for="song">What is this penguin's favourite song?</label>
+            <br>
+            <input list="datalist" id="input" name="option" pattern="[a-zA-Z]+"/>
+            <datalist id="datalist">
+                <option value="Ice Ice Baby">Ice Ice Baby</option>
+                <option value="Free Bird">Free Bird</option>
+                <option value="I Believe I Can Fly">I Believe I Can Fly</option>
+            </datalist>
+        </section>
+        <hr>
+        <section class="catch">
+            <label for="phrase">Finally, what is this penguin's catchphrase?</label>
+            <br>
+            <textarea id="phrase" name="phrase" rows="3" cols="40" minlength="2" required>Oh Pluck!</textarea>
+        </section>
+    </form>
+</div>
+</body>
+</html>
